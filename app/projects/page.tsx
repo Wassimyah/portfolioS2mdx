@@ -46,7 +46,7 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            De projecten die ik voor school heb gemaakt dit semester
+            De projecten die ik voor school heb gemaakt dit semester, met bovenin de 3 projecten. En onderin de specifieke leeruitkomsten. 
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -64,7 +64,7 @@ export default async function ProjectsPage() {
                         }).format(new Date(featured.date))}
                       </time>
                     ) : (
-                      <span>SOON</span>
+                      <span>Finished</span>
                     )}
                   </div>
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
@@ -86,7 +86,7 @@ export default async function ProjectsPage() {
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                    Read more <span aria-hidden="true">&rarr;</span>
+                    Bekijken <span aria-hidden="true">&rarr;</span>
                   </p>
                 </div>
               </article>

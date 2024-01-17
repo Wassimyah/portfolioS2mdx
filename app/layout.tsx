@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "Wassim.com",
     description:
       "Webdeveloper",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "https://wassimyahiaoui.com",
+    siteName: "wassimyahiaoui.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://media.licdn.com/dms/image/D4E03AQHQmMghYAjIHw/profile-displayphoto-shrink_800_800/0/1695973802406?e=2147483647&v=beta&t=6tHsg6zkWw21J0OmPFgQMwu03OcmnfIefnCzGj8t7A0",
         width: 1920,
         height: 1080,
       },
