@@ -1,6 +1,6 @@
 ---
 title: LOC2
-description: 
+description: Transferable production
 repository:
 date: 
 published: true
@@ -10,9 +10,63 @@ published: true
 <h1> LO2 - Transferable production </h1> 
 
 <h2> [Git repositorys](https://git.fhict.nl/I510581/countingjss.git) </h2>
-<p> By using git there is a way to collect all the evidence in code i have made, its also a way to make code tranferable as my group members can easily access it.  </p>
+ik heb overigens ook veel gebruik gemaakt van GitHub, dit omdat ik het platform gewoon fijner vind werken. En het een betere Vercel integratie biedt. 
+Daardoor kan ik CLCI werken waardoor mijn workflow een stuk sneller is. 
+[Github](https://github.com/Wassimyah/portfolioS2mdx.git)
+
 <h2> [Readme in Git ](https://git.fhict.nl/I510581/countingjss.git) </h2>
+Nog niet gemaakt 
+
 <h2> [Commits and branches](https://git.fhict.nl/I510581/countingjss.git) </h2>
-<h2> [Code documentation](https://git.fhict.nl/I510581/countingjss/-/blob/main/script.js </h2>
+Word pas ingevuld zodra het compleet is.
+
+<h2>Code documentation</h2>
+Bij de verschillende projecten is ook verschillende documentation gedaan. Hieronder een klein voorbeeldje.
+```
+// Variabele voor tellen
+let count = 0;
+
+// Functie voor het genereren van kleuren
+function generateComplementaryColor() {
+    // Willekeurige kleur maken
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+    // Complementaire kleur berekenen
+    const hex = randomColor.substring(1);
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    const compR = 255 - r;
+    const compG = 255 - g;
+    const compB = 255 - b;
+    const complementaryColor = '#' + (compR * 65536 + compG * 256 + compB).toString(16).padStart(6, '0');
+
+    // Teruggeven van kleuren
+    return { randomColor, complementaryColor };
+}
+
+// Functie voor het wijzigen van kleuren en tellen
+function changeColorsAndCount() {
+    // Elementen ophalen
+    const countingText = document.getElementById("countingText");
+    const countingNumber = document.getElementById("countingNumber");
+
+    // Kleuren wijzigen
+    const { randomColor, complementaryColor } = generateComplementaryColor();
+    countingText.style.color = complementaryColor;
+    countingText.style.backgroundColor = 'transparent';
+    countingNumber.style.color = randomColor;
+    countingNumber.style.backgroundColor = complementaryColor;
+
+    // Tellen
+    count++;
+    countingNumber.textContent = count;
+}
+
+// Periodiek kleuren wijzigen
+setInterval(changeColorsAndCount, 1000);
+
+```
+
 
 
